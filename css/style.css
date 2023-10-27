@@ -1,0 +1,53 @@
+.c-item{
+    height: 300px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+.f-img{
+    object-fit: cover;
+}
+footer{
+    height: auto;
+}
+.bi-facebook{
+    color:blue;
+}
+.bi-twitter{
+    color:lightskyblue;
+}
+.bi-twitch{
+    color: purple;
+}
+.bi-envelope-open-fill{
+    color: rgb(176, 173, 168);
+}
+.bi-egg-fried{
+    color:yellow;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+  }
+footer::before{
+    content: "";
+    background-image: url('../img/navfoto.jfif');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.5;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    z-index: -5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
